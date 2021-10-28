@@ -39,11 +39,11 @@ function App(){
             </R>  
             
 
-            {/* Bottom Section */}
+            {/*Everything Under Top Pane */}
             <R tel l>
 
 
-                {/* Side Pane */}
+                {/* Left Side Pane */}
                 <R t ns br c={collapse} s= {"240px"}>
                     <R l s = {"50px"}>
                         <C h s={"100px"}>
@@ -61,7 +61,10 @@ function App(){
 
 
                 {/* Writing Pane */}
-                <R tel t ><Challenge></Challenge></R>
+                <R t tel>
+                    <GameButtons></GameButtons>
+                    <SubmitButton></SubmitButton>
+                </R>
 
                 
             </R>
@@ -123,25 +126,29 @@ function Branding(props){
     )
 }
 
-function Challenge(props){
+function GameButton(props){
     return(
-        <R l>
-            <R t tel>
-                <R s = {"20px"}></R>
-                <R l s = {"100px"}>
-                    <R s = {"calc(50% - 150px)"}></R>
-                    <C s = {"100px"} p = {"0 20 0 20"}>
-                    <img src = "rock.png"></img>
-                    </C>
-                    <C s = {"100px"} p = {"0 20 0 20"}>
-                    <img width = "70px" src = "paper.png"></img>
-                    </C>
-                    <C s = {"100px"} p = {"0 20 0 20"}>
-                    <img width = "70px" src = "scissors.png"></img>
-                    </C>
-                </R>
-            </R>
+        <C h br ha="center" s = "33.33%" {...pass(props)}>
+            <img width="50px" src={props.img} ></img>
+        </C>
+    )
+}
+
+function GameButtons(props){
+    return(
+        <R l s={"100px"} bb {...pass(props)}>
+            <GameButton img="rock.png"></GameButton>
+            <GameButton img="paper.png"></GameButton>
+            <GameButton img="scissors.png"></GameButton>
         </R>
+    )
+}
+
+function SubmitButton (props){
+    return (
+        <C s="100px" ha = "center" {...pass(props)}>
+                <button class="button">Submit</button>
+        </C>
     )
 }
 
