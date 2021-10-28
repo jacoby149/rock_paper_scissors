@@ -147,7 +147,7 @@ function GameButtons(props){
 function SubmitButton (props){
     return (
         <C s="100px" ha = "center" {...pass(props)}>
-                <button class="button">Submit</button>
+                <button className="button">Submit</button>
         </C>
     )
 }
