@@ -1,5 +1,5 @@
 
-import {pass,R,C,T} from './rectangles/Rectangles.js'
+import {pass,R,C,T} from 'Rectangles.js'
 
 /* Plain Pad app made of entirely rectangles.js components */
 function App(){
