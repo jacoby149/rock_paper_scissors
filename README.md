@@ -1,4 +1,5 @@
 # rock_paper_scissors
-how fast can i rock paper scissors
+demo of the <a href = "https://jacobhoffman.tk/rectangles/">rectangles</a> framework
 
-i want to see how fast i can make a rock paper scissors app
+see the <a href = "https://jacobhoffman.tk/rectangles_demo">demo</a>
+
